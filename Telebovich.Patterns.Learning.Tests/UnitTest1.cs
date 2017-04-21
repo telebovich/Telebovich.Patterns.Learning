@@ -44,5 +44,25 @@ namespace Telebovich.Patterns.Learning.Tests
 
             Assert.Equal("I'm flying!!", flying);
         }
+
+        [Fact]
+        public void Should_Be_Able_To_Say_Fly_No_Way()
+        {
+            FlyNoWay cantFly = new FlyNoWay();
+
+            string noWay = cantFly.Fly();
+
+            Assert.Equal("I can't fly", noWay);
+        }
+
+        [Fact]
+        public void Should_Be_Able_To_Say_Nothing()
+        {
+            MuteQuack mute = new MuteQuack();
+
+            string silence = mute.DoQuack();
+
+            Assert.Equal("<< Silence >>", silence);
+        }
     }
 }
