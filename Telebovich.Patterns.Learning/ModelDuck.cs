@@ -4,17 +4,17 @@ using System.Text;
 
 namespace Telebovich.Patterns.Learning
 {
-    public class MallardDuck : Duck
+    public class ModelDuck : Duck
     {
-        public MallardDuck()
+        public ModelDuck()
         {
+            FlyBehavior = new FlyNoWay();
             QuackBehavior = new Quack();
-            FlyBehavior = new FlyWithWings();
         }
 
         public override string Display()
         {
-            return "I'm a real Mallard duck";
+            return "I'm a model duck!";
         }
     }
 }
