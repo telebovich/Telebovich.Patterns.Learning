@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Telebovich.Patterns.Learning
+namespace Telebovich.Patterns.Learning.Strategy
 {
     public class FlyRocketPowered : IFlyBehavior
     {
         public string Fly()
         {
-            throw new NotImplementedException();
+            return "I'm flying with a rocket!";
         }
     }
 }

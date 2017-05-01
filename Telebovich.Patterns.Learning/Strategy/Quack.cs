@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Telebovich.Patterns.Learning
+namespace Telebovich.Patterns.Learning.Strategy
 {
-    public class MuteQuack : IQuackBehavior
+    public class Quack : IQuackBehavior
     {
         public string DoQuack()
         {
-            return "<< Silence >>";
+            return "Quack!!";
         }
     }
 }
